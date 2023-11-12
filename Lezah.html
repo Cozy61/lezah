@@ -483,28 +483,28 @@ As you press on, a distant groaning sound reaches your ears. \
 &lt;&lt;linkreplace &quot;Investigate further?&quot;&gt;&gt;
 &lt;hr&gt;\
 &lt;img src=&quot;img/l01/l01_mage.png&quot; width=&quot;100%&quot; class=&quot;left&quot; /&gt;\
-The path you follow is well-trodden, but your senses tingle with caution as you approach a dishevelled hooded figure leaning against a tree. They wear a tattered black cloak, and blood stains mark the path around them. Large animal prints mar the dirt nearby.
-Drawing closer, you spot a scattered collection of glass vials, one of which bears the label &quot;Stillness - in cases of danger - break.&quot; The figure, leaning awkwardly, extends a trembling hand toward you. You hear their feeble whisper, &quot;Help me, and I shall reward you.&quot; You assess the situation; it&#39;s clear that this person, poor and in dire straits, would be a burden on your quest, potentially slowing you down. Yet, your inner voice and moral compass tug at your conscience, nagging at you. 
+You follow the groans. Cautiously at first using the foilage as cover. The path you follow is well-trodden, but your senses tingle with caution as you notice a dishevelled hooded figure slumped against a tree. They wear a tattered black cloak, and blood stains mark the path around them. A large dead wolf lies next to them along with several sets of large animal prints in the dirt nearby.
+Drawing closer, you spot a scattered collection of glass vials, one of which bears the label &quot;Stillness - in cases of danger - break.&quot; The figure, leaning awkwardly, extends a trembling hand toward you. You hear their feeble whisper, &lt;span style=&quot;color: #2F4F4F&quot;&gt;&lt;i&gt;&quot;Help me, and I shall reward you.&quot;&lt;/i&gt;&lt;/span&gt; You assess the situation; it&#39;s clear that this person, poor and in dire straits, would be a burden on your quest, potentially slowing you down. Yet, your inner voice and moral compass tug at your conscience, nagging at you. 
 A choice looms before you, laden with uncertainty. 
 The decision is yours to make, each path holding its own set of consequences and moral dilemmas.
 &lt;hr&gt;
-
 @@#choice;
-&lt;&lt;link &quot;Do you offer your assistance, helping this person to recover.&quot;&gt;&gt;&lt;&lt;replace &quot;#choice&quot;&gt;&gt; Despite the initial doubts that had crept into your mind, your inner voice and moral compass prevail. You cannot simply turn your back on the hooded figure, knowing that they would face a terrible fate should the animals return at nightfall. With a heavy heart, you kneel down beside the struggling soul, offering words of kindness and compassion. Gently, you begin to dress their wounds, helping them to their unsteady feet and collecting their scattered wares.
+&lt;&lt;link &quot;Do you offer your assistance, helping this person to recover.&quot;&gt;&gt;&lt;&lt;replace &quot;#choice&quot;&gt;&gt;\ Despite the initial doubts that had crept into your mind, your inner voice and moral compass prevail. You cannot simply turn your back on the hooded figure, knowing that they would face a terrible fate should the animals return at nightfall. With a heavy heart, you kneel down beside the struggling soul, offering words of kindness and compassion. Gently, you begin to dress their wounds, helping them to their unsteady feet and collecting their scattered wares.
 
-Once the hooded figure is upright and in possession of their belongings, you guide them along the path to the nearest frontier post, where they can find rest and recovery. 
-During the journey, you share the tale of your quest and the circumstances that brought you to this very place, allowing your paths to cross in this fateful encounter.
+Once the hooded figure is upright and in possession of their belongings, you guide them along the path to the nearest frontier post, where they can find rest and recovery. During the journey, you share the tale of your quest and the circumstances that brought you to this very place, allowing your paths to cross in this fateful encounter. Before long, and just before nightfall, you arrive at the frontier post where several people help you get them into the inn.
+
 As the dawn chorus fills the air with its melodious song, you gather your belongings and make your way to the host to settle your bill. The innkeeper, with a knowing smile, informs you that the hooded figure has already paid your bill and left behind a note. 
 
 The note bears words of gratitude: &lt;span style=&quot;color: #2F4F4F&quot;&gt;&lt;i&gt;&quot;Thank you, kind sir. I am a mage from the hamlet of Brand. I was on the brink of passing, but your act of courage and kindness has allowed me to recover sufficiently to continue my journey. Please accept this &lt;span style=&quot;color: #DC143C&quot;&gt;vial of Stillness&lt;/span&gt; as a token of my appreciation. But beware, for if it is broken, it can unleash immeasurable harm upon whomever it envelops. I wish you the best of luck with your quest.&quot;&lt;/i&gt;&lt;/span&gt;\ 
 &lt;&lt;if $hasVial is false&gt;&gt;\
  The innkeeper offers you the vial.
-&lt;&lt;linkreplace &quot;Take the vial.&quot;&gt;&gt;
+&lt;&lt;linkreplace &quot;Take the vial&quot;&gt;&gt;
  You take the vial and are left with a heart warmed by your choice to help a fellow traveller in need, plus a very valuable token that may prove useful on your quest to return the light to the realm of LEZAH.\
 &lt;&lt;set $hasVial to true&gt;&gt;/
+[[East|02 Clearing]] | [[SouthEast|11 Frontier]]
 &lt;&lt;/linkreplace&gt;&gt;
 &lt;&lt;/if&gt;&gt;\
-&lt;&lt;linkreplace &quot;Leave and head towards the path leading&quot; &gt;&gt;
+&lt;&lt;linkreplace &quot;Leave the vial, fearing it may contain dark magic, and head towards the path leading&quot; &gt;&gt;
 You leave the vial, bid your farewells and make your way out of the inn ready to face your future.  [[East|02 Clearing]] | [[SouthEast|11 Frontier]] &lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;&lt;link&quot; Do you seize the opportunity to steal the vials and continue your journey, leaving them to their uncertain fate?&quot;&gt;&gt;&lt;&lt;replace &quot;#choice&quot;&gt;&gt; Determined to reach your destination without the burden of the dishevelled figure, you choose to ignore their plea for help, believing it would only slow you down. Instead, you decide to claim the vials left behind, knowing they would be of no use to the mortally injured stranger. 
 
@@ -514,8 +514,8 @@ Helpless, you lie on the path, listening to growls in the near distance, an unse
 
 Through the dense foliage, you spot the &lt;span style=&quot;color: #DC143C&quot;&gt;&lt;i&gt;fiery red eyes&lt;/i&gt;&lt;/span&gt; ablaze with the hunger of wolves from this treacherous region. In a brutal and frenzied onslaught, the pack of wolves descends upon you, their jaws tearing at your flesh in a chaotic feeding frenzy. Their actions are propelled solely by their voracious hunger, and, as your vision fades, so does your quest. &lt;span style=&quot;color: #DC143C&quot;&gt;&lt;i&gt;Abruptly cut short as a consequence of your poor morality.&lt;/i&gt;&lt;/span&gt;&lt;&lt;/type&gt;&gt;&lt;&lt;timed 15s t8n&gt;&gt;\&lt;&lt;goto &quot;Quest Ended&quot;&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;&lt;link &quot;The third option is to ignore what you see, resolute in your determination to reach safety by nightfall.&quot;&gt;&gt;&lt;&lt;replace &quot;#choice&quot;&gt;&gt;You choose to ignore the dishevelled figure, convinced that helping them would only hinder your quest, possibly slowing you down and putting you at risk. Determination fuels your steps as you continue to head towards the nearest village, your anxiety rising as the sun begins its descent toward the horizon. The looming shadows remind you of the creatures that left those ominous paw prints, and your priority is to reach shelter before nightfall, ensuring your safety from the lurking dangers this pathway may hold. &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt; @@
-
 &lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
+
 
 
 </tw-passagedata><tw-passagedata pid="38" name="21 Frontier" tags="" position="700,875" size="100,100">[[12 Gates to Ruin]] 
